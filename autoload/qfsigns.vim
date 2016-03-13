@@ -6,7 +6,7 @@ let g:qfsigns#Enabled   = ! exists('g:qfsigns#Enabled')   ? 1 : g:qfsigns#Enable
 let g:qfsigns#AutoJump  = ! exists('g:qfsigns#AutoJump')  ? 0 : g:qfsigns#AutoJump
 if !exists('g:qfsigns#Config')
     let g:qfsigns#Config = {'id': '5050', 'name': 'QFError',}
-    execute 'sign define '.get(g:qfsigns#Config,'name').' linehl=SpellBad texthl=SpellBad text=>>'
+    execute 'sign define '.get(g:qfsigns#Config,'name').' linehl=SpellBad texthl=SpellBad text=⚠'
     lockvar! g:qfsigns#Config
 endif
 "}}}
